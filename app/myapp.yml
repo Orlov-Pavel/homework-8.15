@@ -1,0 +1,7 @@
+services:
+  myapp:
+    image: python
+    container_name: myapp
+    volumes:
+      - ./myapp.py:/myapp/myapp.py
+    entrypoint: python3 -u /myapp/myapp.py
